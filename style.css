@@ -1,628 +1,830 @@
-body, html {
-    height: 80%;
-    margin: 0;
-    font-family: serif;
+html,
+body {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+body {
+  font-family: serif;
+}
 
 #main-banner {
-  
-    background-image: url(/images/iceland7.avif);
-    background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
-    position: relative;
-    height: 130vh;
-    width: 100%;
+  background-image: url(/images/iceland7.avif);
+  background-position: center;
 }
 
-.list{
-    color: rgba(220, 220, 220, 0.623);
-    position: relative;
-    top: 50px;
-    left: 85%;
+.main-banner {
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
-.Iceland{
-    color: white;
-    position: relative;
-    top: 50px;
-    left: 85%;
+/*Navbar Section*/
+.navbar {
+  color: white;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10%;
+  margin-top: 3%;
 }
 
-.divider{
-    width: 160px;
-    position: absolute;
-    top: 50px;
-    left: 73%;
+.divider {
+  float: right;
+  padding-right: 1%;
+  margin-top: 3%;
+  width: 10%;
 }
 
-.BEYOND{
-    color: rgba(220, 220, 220, 0.822);
-    position: absolute;
-    top: 520px;
-    left: 18%;
+a {
+  color: rgb(182, 178, 178);
+  text-decoration: none;
+  line-height: 1.6;
 }
 
-.beyond-divider{
-    width: 100px;
-    position: absolute;
-    top: 520px;
-    left: 10%;
+a:hover {
+  color: white;
 }
 
-
-h1.Iceland_h1{
-    color: white;
-    position: absolute;
-    top: 455px;
-    left: 10%;
-    font-size: 8em;
+/*Beyond Section*/
+.beyond_header {
+  margin-left: 10%;
+  color: white;
+  padding-top: 28%;
+  width: 40%;
+  font-size: 1.0rem;
 }
 
-p.describtion{
-    color: rgba(220, 220, 220, 0.822);
-    position: absolute;
-    top: 680px;
-    left: 10%;
-    font-size: 17px;
+.beyond-divider {
+  width: 25%;
+  float: left;
+  margin-right: 4%;
 }
 
-.nature{
-    position: absolute;
-    top: 900px;
-    right: 15%;
-    float: right;
-    max-height: 400px;  
+.header_paraghraph {
+  margin: 0;
 }
 
-.image-nature{
-    width: 480px;
-    height: 620px;
-    position: relative;
-    left: -40px;
-    top: -140px;
-    object-fit: contain;
+.title {
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  margin: 0;
 }
 
-
-.article{
-    flex: 1 1 280px;
-    padding: 0;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.description {
+  margin: 0;
+  line-height: 1.7;
+  max-width: 450px;
 }
 
-figcaption.nature-caption{
-    position: relative;
-    top: 76px;
-    float: right;
-    width: 350px;
-    height: 700px;
+/*Nature Section*/
+.nature_images {
+  height: 600px;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 15%;
 }
 
-.heading{
-    font-size: 3.7rem;
-    position: relative;
-    left: 20px;
-    top: -20px;
+.nature_right {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: right;
+  right: 20%;
+  width: 60%;
+  height: 550px;
+  display: flex;
+  position: absolute;
+  top: 95%;
+  left: 30%;
 }
 
-.nature-divider{
-    width: 90px;
-    position: absolute;
-    top: 5px;
-    left: 6%;
+.nature_left {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 65%;
+  position: relative;
+  height: 450px;
+  top: 30%;
+  right: 5%;
 }
 
-.nature-container{
-    position: relative;
-    top: -10px;
-    left: 20px;
-    font-size: 1rem;
+.image_nature_left {
+  width: 100%;
+  height: 450px;
 }
 
-.nature_btn{
-    position: absolute;
-    top: 390px;
-    left: 18px;
-    border-radius: 50px;
-    width: 150px;
-    height: 50px;
-    border-color: gainsboro;
-    font-size: 11px;
-    font-weight: bold;
-    border-width: 1px;
-    background-color: white;
+.image_nature_right {
+  background-size: contain;
+  width: 60%;
 }
 
-img.image-iceland3{
-    position: absolute;
-    right: 50%;
-    top: 320px;
-    float: left;
-    width: 650px;
-    height: 390px;
+.image_nature {
+  width: 100%;
+  height: 60%;
 }
 
+.nature_btn {
+  position: absolute;
+  top: 370px;
+  left: 56%;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  border-color: gainsboro;
+  font-size: 11px;
+  font-weight: bold;
+  border-width: 1px;
+  background-color: white;
+}
+
+.nature_text {
+  background-color: white;
+  padding-left: 3%;
+  width: 50%;
+}
+
+.nature_divider {
+  width: 20%;
+  margin-top: 20%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}
+
+.title_nature {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 0px;
+  font-size: 50px;
+  margin-top: 2%;
+}
+
+.paragraph_nature {
+  max-width: 90%;
+  padding-bottom: 30%;
+}
+
+/*Another Planet Section*/
 .flex-container {
-    display: flex;
-    position: absolute;
-    top: 1800px;
-    left: 12%;
-  }
-
-  .flex-divider{
-    width: 70px;
-    position: absolute;
-    top: 40px;
-    left: 32%;
-
-  }
-  
-  .flex-container > div {
-    margin: 20px;
-    padding-top: 0px;
-    padding-left: 0px;
-  }
-
-  .icetree {
-    width: 300px;
-    height: 300px;
-  }
-
-  .iceTree-h1{
-    font-size: 40px;
-    width: 360px;
-    padding-top: 20px;
-    color: rgba(0, 0, 0, 0.664);
-  }
-
-  .iceTree-p{
-    padding-top: 40px;
-    color: rgba(0, 0, 0, 0.664);
-  }
-
-  .iceTree-paragraph{
-    padding-top: 142px;
-    width: 360px;
-    color: rgba(0, 0, 0, 0.664);
-  }
-
-  .stay{
-    position: absolute;
-    top: 2250px;
-    left: 15%;
-    float: left;
-    max-height: 500px; 
-    width: 890px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
-.article-stay{
-    flex: 1 1 280px;
-    padding: 0;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.flex-divider {
+  width: 10%;
+  position: absolute;
+  top: auto;
+  left: 32%;
 }
 
-img.image-stay{
-    width: 470px;
-    height: 580px;
-    position: relative;
-    right: -40px;
-    top: -138px;
-    object-fit: contain;
+.flex-container>div {
+  margin: 20px;
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
-figcaption.stay-caption{
-    position: relative;
-    top: 60px;
-    float: left;
-    width: 340px;
+.icetree {
+  width: 250px;
+  height: 250px;
 }
 
-.stay-divider{
-    width: 90px;
-    position: absolute;
-    top: 10px;
-    left: 6%;
+.iceTree-h1 {
+  font-size: 40px;
+  width: 360px;
+  padding-top: 2px;
+  color: rgba(0, 0, 0, 0.664);
 }
 
-.heading-stay{
-    font-size: 3.7rem;
-    position: relative;
-    left: 6%;
-    top: -20px;
+.iceTree-p {
+  padding-top: 30px;
+  color: rgba(0, 0, 0, 0.664);
 }
 
-.stay-container{
-    position: relative;
-    top: -10px;
-    left: 6%;
-    font-size: 1rem;
+.iceTree-paragraph {
+  padding-top: 117px;
+  width: 360px;
+  color: rgba(0, 0, 0, 0.664);
 }
 
-.stay_btn{
-    position: absolute;
-    top: 390px;
-    left: 6%;
-    border-radius: 50px;
-    width: 150px;
-    height: 50px;
-    border-color: gainsboro;
-    font-size: 11px;
-    font-weight: bold;
-    border-width: 1px;
-    background-color: white;
-
+/*Stay Section*/
+.stay_images {
+  height: 600px;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 15%;
 }
 
-img.image-iceland3-stay{
-    position: absolute;
-    left: 50%;
-    top: 230px;
-    float: right;
-    width: 650px;
-    height: 390px;
+.stay_right {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  right: 20%;
+  width: 60%;
+  height: 500px;
+  display: flex;
+  position: absolute;
+  top: 290%;
+  left: 10%;
 }
 
-.gallery-header{
-    color: rgba(0, 0, 0, 0.651);
-    position: absolute;
-    top: 3025px;
-    left: 43%;
-    font-size: 21px;
+.stay_left {
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 65%;
+  position: relative;
+  height: 410px;
+  top: 55%;
+  left: 40%;
 }
 
-.gallery-divider{
-    width: 70px;
-    position: absolute;
-    top: 10px;
-    left: 30%;
+.image_stay_left {
+  width: 100%;
+  height: 410px;
+}
+
+.image_stay_right {
+  background-size: contain;
+  width: 70%;
+}
+
+.image_stay {
+  width: 100%;
+  height: 60%;
+}
+
+.stay_right_text {
+  background-color: white;
+  padding-left: 5%;
+  width: 70%;
+}
+
+.stay_divider {
+  width: 20%;
+  margin-top: 20%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}
+
+.stay_title {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 0px;
+  font-size: 50px;
+  margin-top: 2%;
+}
+
+.stay_paragraph {
+  max-width: 90%;
+  padding-bottom: 30%;
+}
+
+.stay_btn {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  border-color: gainsboro;
+  font-size: 11px;
+  font-weight: bold;
+  border-width: 1px;
+  background-color: white;
+}
+
+
+/*Epic Spots Section*/
+.gallery-header {
+  color: rgba(0, 0, 0, 0.651);
+  position: absolute;
+  top: 2650px;
+  left: 42.2%;
+  font-size: 21px;
+}
+
+.gallery-divider {
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  left: 30%;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  position: absolute;
+  top: 3050px;
+  float: center;
+  left: 15%;
+
+}
+
+.grid-container>div {
+  text-align: center;
+}
+
+.grid1 {
+  grid-column: 1 / span 2;
+  grid-row: 1/span 2;
+  position: relative;
+  top: -248px;
+}
+
+.grid2,
+.grid3,
+.grid4,
+.grid5 {
+  position: relative;
+  top: -250px;
+}
+
+.grid-container>div .item1-image {
+  max-width: 500px;
+}
+
+.grid-container>div img {
+  max-width: 230px;
+}
+
+.item1-container {
+  position: absolute;
+  top: 240px;
+  left: 40px;
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 10px;
+}
+
+.item1-heading {
+  position: absolute;
+  top: 255px;
+  left: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.item2-container {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 10px;
+}
+
+.item2-heading {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.item3-container {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 10px;
+}
+
+.item3-heading {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.item4-container {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 10px;
+}
+
+.item4-heading {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.item5-container {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 10px;
+}
+
+.item5-heading {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+/*Footer Section*/
+.footer {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  margin-top: 67%;
+  margin-bottom: 0%;
+  background-image: url("images/footer_bg.jpg");
+  position: absolute;
+  top: 2400px;
+
+}
+
+.header_footer {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding-top: 4%;
+  padding-left: 10%;
+  color: rgba(245, 245, 245, 0.829);
+  font-size: 1.4rem;
+}
+
+.guide-p {
+  font-size: 12px;
+  position: relative;
+  bottom: 50px;
+  padding-top: 35px;
+  padding-left: 42%;
+  color: rgba(245, 245, 245, 0.829);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.name {
+  background: transparent;
+  width: 200px;
+  height: 30px;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  border-color: rgba(220, 220, 220, 0.384);
+  border-width: 2px;
+  position: absolute;
+  left: 43%;
+  top: 200px;
+}
+
+.email {
+  background: transparent;
+  width: 200px;
+  height: 30px;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  border-color: rgba(220, 220, 220, 0.384);
+  border-width: 2px;
+  position: absolute;
+  left: 43%;
+  top: 250px;
+}
+
+.submit {
+  border-width: 0px;
+  position: absolute;
+  left: 44%;
+  top: 350px;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: rgba(32, 29, 29, 0.699);
+  font-size: 11px;
+  font-weight: bold;
+  color: rgba(245, 245, 245, 0.829);
+}
+
+.copyright {
+  color: rgb(168, 163, 163);
+  padding-left: 50px;
+  position: absolute;
+  top: 440px;
+  left: 0.5%;
+  width: 200px;
+}
+
+.copyright_paragraph {
+  margin-top: 0px;
+  float: left;
+  color: rgb(168, 163, 163);
+  position: absolute;
+  top: 440px;
+  right: 0.5%;
+  width: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-banner {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .beyond_header {
+    margin-left: 5%;
+    padding-top: 55%;
+  }
+  .stay_images {
+    height: 1200px;
+  }
+
+  .flex-container {
+    width: 100%;
     position: absolute;
-    top: 3440px;
-    float: center;
+    top: 1350px;
+    left: 0%;
+  }
+
+  .icetree {
+    width: 200px;
+    height: 265px;
+    position: absolute;
+    left: 10%;
+  }
+
+  .iceTree-h1 {
+    font-size: 20px;
+    width: 200px;
+    padding-top: 0px;
+    position: absolute;
+    left: 40%;
+    top: 20px;
+  }
+
+  .flex-divider {
+    position: absolute;
+    top: 15px;
+    left: 40%;
+  }
+
+  .iceTree-p {
+    padding-top: 30px;
+    position: absolute;
+    left: 40%;
+    width: 200px;
+  }
+
+  .iceTree-paragraph {
+    padding-top: 30px;
+    width: 200px;
+    position: absolute;
+    left: 70%;
+  }
+
+  .gallery-header {
+    position: absolute;
+    top: 2500px;
+    left: 40%;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 2900px;
     left: 20%;
-   
   }
-  
-  .grid-container > div {
-    text-align: center;
-  }
-  
+
   .grid1 {
     grid-column: 1 / span 2;
     grid-row: 1/span 2;
     position: relative;
-    top: -248px;
+    left: -1%;
   }
 
-  .grid2,.grid3,.grid4,.grid5{
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
     position: relative;
     top: -250px;
   }
 
-  .grid-container > div .item1-image{
+  .grid-container>div .item1-image {
     max-width: 500px;
   }
-  .grid-container > div img{
+
+  .grid-container>div img {
     max-width: 230px;
   }
 
-  .item1-container{
+  .footer {
     position: absolute;
-    top: 240px;
-    left: 40px;
-    color: rgba(255, 255, 255, 0.479);
-    font-size: 10px;
+    top: 2400px;
+    margin-top: 125%;
   }
 
-  .item1-heading{
-    position: absolute;
-    top: 255px;
-    left: 40px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+  .header_footer {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    width: 200px;
   }
 
-  .item2-container{
-    position: absolute;
-    top: 95px;
-    left: 20px;
-    color: rgba(255, 255, 255, 0.479);
-    font-size: 10px;
+  .guide-p {
+    padding-left: 38%;
+    width: 300px;
   }
 
-  .item2-heading{
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+  .submit {
+    margin-left: -20px;
   }
 
-  .item3-container{
+  .name {
     position: absolute;
-    top: 95px;
-    left: 20px;
-    color: rgba(255, 255, 255, 0.479);
-    font-size: 10px;
+    left: 40%;
+    top: 150px;
   }
 
-  .item3-heading{
+  .email {
     position: absolute;
-    top: 100px;
-    left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+    left: 40%;
+    top: 200px;
   }
 
-  .item4-container{
+  .copyright {
+    padding-left: 30px;
     position: absolute;
-    top: 95px;
-    left: 20px;
-    color: rgba(255, 255, 255, 0.479);
-    font-size: 10px;
+    left: 2%;
   }
 
-  .item4-heading{
+  .copyright_paragraph {
+    padding-left: 550px;
     position: absolute;
-    top: 100px;
-    left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+    right: 2%;
   }
 
-  .item5-container{
-    position: absolute;
-    top: 95px;
-    left: 20px;
-    color: rgba(255, 255, 255, 0.479);
-    font-size: 10px;
-  }
+}
 
-  .item5-heading{
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 0px;
+@media only screen and (max-width: 768px) {
+  .main-banner {
     width: 100%;
-    height: 100%;
-    background-color: rgb(39, 35, 34);
-    color: rgba(245, 245, 245, 0.829);
-    position: relative;
-    top: 2650px;
+    background-size: cover;
   }
 
-  .guide{
+  .description {
+    margin: 2px;
+    line-height: 1.2;
+    font-size: 10px;
+  }
+
+  .nature_right {
+    left: 0px;
+    width: 100%;
+    top: 100%;
+  }
+
+  .nature_left {
+    width: 100%;
+    height: 450px;
     position: absolute;
-    top: 100px;
-    left: 600px;
+    top: 180%;
+    left: 0px;
   }
 
-  .guide-header{
-    font-size: 50px;
-    position:relative;
-    bottom: 30px;
-    color: rgba(245, 245, 245, 0.829);
-  }
-
-  .guide-p{
-    font-size: 12px;
-    position:relative;
-    bottom: 50px;
-    color: rgba(245, 245, 245, 0.829);
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .name{
-    background-color: rgb(39, 35, 34);
-    width: 200px;
-    height: 30px;
-    border-right: 0;
-    border-top: 0;
-    border-left: 0;
-    border-color: rgba(220, 220, 220, 0.384);
-    border-width: 2px;
+  .stay_right {
+    width: 100%;
+    height: 550px;
     position: absolute;
-    left: 50px;
-    top: 110px;
+    top: 2100px;
+    left: 0px;
   }
 
-  .email{
-    background-color: rgb(39, 35, 34);
-    width: 200px;
-    height: 30px;
-    border-right: 0;
-    border-top: 0;
-    border-left: 0;
-    border-color: rgba(220, 220, 220, 0.384);
-    border-width: 2px;
+  .stay_left {
+    width: 100%;
     position: absolute;
-    left: 50px;
-    top: 160px;
+    height: 400px;
+    top: 2600px;
+    left: 0px;
   }
 
-  .submit{
-    border-width: 0px;
+  .flex-container {
+    width: 100%;
     position: absolute;
-    left: 75px;
-    top: 240px;
-    border-radius: 50px;
+    top: 1650px;
+    left: 0%;
+  }
+
+  .icetree {
     width: 150px;
-    height: 50px;
-    background-color: rgba(220, 220, 220, 0.055);;
-    font-size: 11px;
-    font-weight: bold;
-    color: rgba(245, 245, 245, 0.829);
-  }
-  
-  @media only screen and (max-width: 800px) {
-    body{
-      width: 100%;
-    }
-    .divider,.beyond-divider{display: none;}
-    .nature{
-      float: center;
-      position: absolute;
-      left: 50px; 
-    }
-    .image-nature{
-      width: 330px;
-      height: 620px;
-      position: relative;
-      left: -40px;
-      top: -195px;
+    height: 265px;
+    position: absolute;
+    left: 10px;
   }
 
-img.image-iceland3{
-  position: absolute;
-  left: 8%;
-  top: 700px;
-  float: center;
-}
+  .iceTree-h1 {
+    font-size: 20px;
+    width: 200px;
+    padding-top: 0px;
+    position: absolute;
+    left: 30%;
+    top: 20px;
+  }
 
-
-.flex-container {
-  position: absolute;
-  top: 2100px;
-  left: 0px;
-}
-
-.icetree {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 2%;
-}
-
-.iceTree-h1{
-  font-size: 15px;
-  width: 330px;
-  padding-top: 0px;
-  position: relative;
-  left: 55%;
-  top: 20px;
-}
-
-.flex-divider{
-  position: absolute;
-  top: 30px;
-  left: 31%;
-
-}
-
-.iceTree-p{
-  padding-top: 30px;
-  position: relative;
-  left: 55%;
-}
-
-.iceTree-paragraph{
-  padding-top: 56px;
-  width: 330px;
-  position: relative;
-  left: 50%;
-}
-
-.stay{
-  position: absolute;
-  top: 2450px;
-  left: 50px;
-  float: center;
-}
-
-
-img.image-stay{
-  position: relative;
-  right: -40px;
-  top: -134px;
-}
-
-img.image-iceland3-stay{
-  position: absolute;
-  left: 15%;
-  top: 650px;
-  float: center;
-}
-
-.gallery-header{
-  position: absolute;
-  top: 3550px;
-  left: 43%;
-}
-
-.grid-container {
-  position: absolute;
-  top: 3940px;
-  float: center;
-  left: 25%;
-}
-
-.grid1 {
-  grid-column: 1 / span 4;
-  position: relative;
-  left: 15%;
-}
-
-.grid2{
-  position: relative;
-  grid-row: 3;
-  grid-column: 1 / span 2;
-  left: 25%;
-}
-
-.grid3{
-  position: relative;
-  grid-row: 3;
-  grid-column: 3 / span 4;
-  left: 25%;
-}
-
-.grid4{
-  position: relative;
-  grid-row: 4;
-  grid-column: 1 / span 2;
-  left: 25%;
-}
-
-.grid5{
-  position: relative;
-  grid-row: 4;
-  grid-column: 3 / span 4;
-  left: 25%;
-}
-
-.grid-container > div{
-  max-width: 500px;
-}
-
-.grid-container > div{
-  max-width: 250px;
-}
-
-footer {
-  position: relative;
-  top: 3600px;
-}
-
-.guide{
-  position: absolute;
-  left: 35%;
-}
+  .flex-divider {
+    position: absolute;
+    top: 15px;
+    left: 30%;
 
   }
 
+  .iceTree-p {
+    padding-top: 30px;
+    position: absolute;
+    left: 30%;
+    width: 150px;
+  }
 
+  .iceTree-paragraph {
+    padding-top: 30px;
+    width: 150px;
+    position: absolute;
+    left: 65%;
+  }
+
+  .gallery-header {
+    position: absolute;
+    top: 3100px;
+    left: 34%;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 3500px;
+    left: 15%;
+  }
+
+  .grid1 {
+    grid-column: 1 / span 2;
+    grid-row: 1/span 2;
+    position: relative;
+    left: -1%;
+  }
+
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
+    position: relative;
+    top: -250px;
+  }
+
+  .grid-container>div .item1-image {
+    max-width: 500px;
+  }
+
+  .grid-container>div img {
+    max-width: 230px;
+  }
+
+  .footer {
+    position: absolute;
+    top: 3100px;
+    margin-top: 125%;
+  }
+
+  .header_footer {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+  }
+
+  .guide-p {
+    padding-left: 250px;
+  }
+
+  .submit {
+    margin-left: -30px;
+  }
+
+  .name {
+    position: absolute;
+    left: 36%;
+    top: 150px;
+  }
+
+  .email {
+    position: absolute;
+    left: 36%;
+    top: 200px;
+  }
+
+  .copyright {
+    padding-left: 30px;
+    position: absolute;
+    left: 2%;
+  }
+
+  .copyright_paragraph {
+    padding-left: 550px;
+    position: absolute;
+    right: 2%;
+  }
+}
